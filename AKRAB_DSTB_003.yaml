@@ -55,3 +55,16 @@ proxies:
   udp: true
   sni: teams.live.com
   skip-cert-verify: true
+- name: danugfw02
+  type: trojan
+  server: wsindo.aryossh.my.id
+  port: 443
+  password: f85f8b68-2b62-42c9-81cb-c353cb902301
+  udp: true
+  sni: sg-ctn.sshpremium.my.id
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /trojan
+    headers:
+      Host: sg-ctn.sshpremium.my.id
